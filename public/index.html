@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TITLE</title>
+		<link media="all" rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="container">
+					<div class="logo"><a href="#"><img src="images/logo.png" alt="LOGO" width="100" height="20"></a></div>
+					<nav class="main-navigation" id="nav" role="navigation" aria-label="Primary Menu"><a class="nav-opener" href="#"><span>Open</span></a>
+						<div class="nav-drop">
+							<ul class="primary-menu">
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Page A</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Page B</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Front Page</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="#">Page Markup And Formatting</a></li>
+								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="#">Level 1</a>
+									<ul class="sub-menu toggled-on">
+										<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children current-menu-parent"><a href="#">Level 2</a>
+											<ul class="sub-menu toggled-on">
+												<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item"><a href="#">Level 3a</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main id="main" role="main">
+				<div class="container"></div>
+				<ul>
+					<li><a class="lightbox" href="#popup1">Open popup 1</a></li>
+					<li><a class="lightbox" href="#popup2">Open popup 2</a></li>
+				</ul>
+			</main>
+			<div class="popup-holder">
+				<div class="lightbox-demo" id="popup1">
+					<h2>Lightbox title 1</h2>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>1111111111 1 1 1 1 1 1  1</p><a data-fancybox-close="" href="#">Close</a>
+				</div>
+				<div class="lightbox-demo" id="popup2">
+					<h2>Lightbox title 2</h2>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>22222  22 2222 22 2 22 22</p><a class="next-lightbox" href="#popup3">Open popup 3</a><a data-fancybox-close="" href="#">Close</a>
+				</div>
+				<div class="lightbox-demo" id="popup3">
+					<h2>Lightbox title 3</h2>
+					<p>Lorem ipsum dolor sit amet...</p>
+					<p>333333 3 3 3 3  3 3  3 3  3 3</p><a data-fancybox-close="" href="#">Close</a>
+				</div>
+			</div>
+			<footer id="footer">
+				<div class="container">
+					<h1>footer</h1>
+				</div>
+			</footer>
+		</div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"></\/script>')</script>
+		<script type="text/javascript" src="js/jquery.main.js"></script>
+	</body>
+</html>

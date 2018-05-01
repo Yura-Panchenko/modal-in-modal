@@ -1,0 +1,26 @@
+include pug/common/_head
+	block content
+		include pug/common/_header
+		main#main(role="main")
+			.container
+			ul
+				li: a.lightbox(href="#popup1") Open popup 1
+				li: a.lightbox(href="#popup2") Open popup 2
+		.popup-holder
+			#popup1.lightbox-demo
+				h2 Lightbox title 1
+				p Lorem ipsum dolor sit amet...
+				p 1111111111 1 1 1 1 1 1  1
+				a(data-fancybox-close='', href='#') Close
+			#popup2.lightbox-demo
+				h2 Lightbox title 2
+				p Lorem ipsum dolor sit amet...
+				p 22222  22 2222 22 2 22 22
+				a.next-lightbox(href="#popup3") Open popup 3
+				a(data-fancybox-close='', href='#') Close
+			#popup3.lightbox-demo
+				h2 Lightbox title 3
+				p Lorem ipsum dolor sit amet...
+				p 333333 3 3 3 3  3 3  3 3  3 3
+				a(data-fancybox-close='', href='#') Close
+		include pug/common/_footer
